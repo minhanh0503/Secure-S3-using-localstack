@@ -81,4 +81,6 @@ You can modify FILE_TO_UPLOAD in the script to test with different files.
 Presigned URLs allow temporary access without changing bucket permissions.
 
 ## Screenshot of how the URL should show
+<img width="963" height="462" alt="image" src="https://github.com/user-attachments/assets/c852d84e-e407-4b22-bf35-b7637283ac55" />
+
 <img width="1800" height="603" alt="image" src="https://github.com/user-attachments/assets/de036683-f767-4f56-aea9-34d52b8d76b8" />
