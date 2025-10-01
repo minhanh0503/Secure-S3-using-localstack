@@ -40,7 +40,6 @@ s3.put_bucket_encryption(
 print("Server-side encryption enabled (AES256).")
 
 # Enable Versioning
-
 s3.put_bucket_versioning(
     Bucket=BUCKET_NAME,
     VersioningConfiguration={"Status": "Enabled"}
@@ -51,6 +50,20 @@ print("Versioning enabled.")
 file_name = os.path.basename(FILE_TO_UPLOAD)
 s3.upload_file(FILE_TO_UPLOAD, BUCKET_NAME, file_name)
 print(f"File '{file_name}' uploaded.")
+
+#If you want to upload multiple files:
+# List all files you want to upload
+# FILES_TO_UPLOAD = [
+#     "C:/Users/cunye/Documents/example.txt",
+#     "C:/Users/cunye/Documents/example2.txt",
+#     "C:/Users/cunye/Documents/example3.txt"
+# ]
+
+# Loop through files and upload each one
+# for file_path in FILES_TO_UPLOAD:
+#     file_name = os.path.basename(file_path)
+#     s3.upload_file(file_path, BUCKET_NAME, file_name)
+#     print(f"File '{file_name}' uploaded.")
 
 #  Apply Bucket Policy (Deny all by default)
 bucket_policy = {
