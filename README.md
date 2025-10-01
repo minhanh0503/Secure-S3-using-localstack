@@ -36,6 +36,7 @@ secure-s3-localstack/
    - [LocalStack](https://localstack.cloud/) (`pip install localstack`)
    - [AWS CLI](https://aws.amazon.com/cli/) (`pip install awscli`)
    - [Boto3](https://boto3.amazonaws.com/) (`pip install boto3`)
+   - Optional: some machine require Docker to be able to run the Localstack, so for more information about it you can go in here https://www.docker.com/products/docker-desktop/
 
 2. **Start LocalStack:**
 
